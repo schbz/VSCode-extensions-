@@ -4,6 +4,6 @@ This repo is just a periodically updated list of my currently installed extensio
 
 Each list when entered into terminal will install/reinstall my most recent set of VSC extensions if it should even become nessecary
 
-It can be obtained by typing the following code in PowerShell:
+backups are created with the following powershell command:
 
-`PS C:\Repositories\VSCode extensions list> code --list-extensions | % { "code --install-extension $_" }`
+`code --list-extensions | % { "code --install-extension $_" } | Out-file ExampleFile.md`
