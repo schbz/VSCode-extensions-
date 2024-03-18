@@ -1,9 +1,11 @@
-# Visual Studio Code Preferred Extensions List
+# VSCode Installed Extensions List
 
 This repo is just a periodically updated list of my currently installed extensions
 
-Each list when entered into terminal will install/reinstall my most recent set of VSC extensions if it should even become nessecary
+Each list when entered into terminal will install/reinstall my most recent set of VSC extensions if it should even become necessary
 
-backups are created with the following powershell command:
+backups are created by running the script file in this directory:
 
-`code --list-extensions | % { "code --install-extension $_" } | Out-file ExampleFile.md`
+```powershell
+./backup.ps1
+```
